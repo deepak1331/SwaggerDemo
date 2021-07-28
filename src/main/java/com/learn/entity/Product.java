@@ -5,7 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistance.Entity;
+
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -13,6 +14,7 @@ import javax.persistance.Entity;
 @Table(name = "product_tbl")
 public class Product {
 
+    @Id
     private int id;
     private String name;
     private int quantity;
